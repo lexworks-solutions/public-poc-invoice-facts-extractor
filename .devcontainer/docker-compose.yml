@@ -1,0 +1,25 @@
+networks:
+  financeworks:
+
+services:
+  devcontainer:
+    container_name: devcontainer
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    # Keeps the container running indefinitely so VS Code can attach.
+    command: sleep infinity
+
+    # Mounts the project folder to the same path VS Code expects.
+    volumes:
+      - ../../:/workspaces:cached
+
+    networks:
+      - financeworks
+
+  localstack:
+    image: localstack/localstack:latest
+    container_name: localstack
+    networks:
+      - financeworks

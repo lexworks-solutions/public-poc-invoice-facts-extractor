@@ -1,0 +1,20 @@
+{
+  "name": "financeworks-devcontainer",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "devcontainer",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  // Features allow you to add tools without modifying a Dockerfile.
+  // These are maintained by the community/Microsoft and stay up to date.
+  // Post-create command (optional: runs once after container creation)
+  // "postCreateCommand": "docker --version && docker-compose --version",
+  // Connect as the non-root user 'vscode' created by the base image
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers/features/go:1": {},
+    "ghcr.io/devcontainers/features/python:1": {}
+  },
+  "remoteUser": "vscode",
+  "mounts": [
+    "source=${localEnv:HOME}/.gnupg,target=/home/vscode/.gnupg,type=bind,consistency=cached"
+  ]
+}
