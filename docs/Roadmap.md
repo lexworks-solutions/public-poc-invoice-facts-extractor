@@ -25,3 +25,5 @@ After executing the tests, we have found that:
 
 1. The workflow is viable and the AI is able to reliably extract information from the invoices.
 2. Using TSV is likely unnecessary with the recent development of multimodal models. Uploading the invoices directly could lead to reduced token usage and potentially more accuracy.
+
+**Note:** This project was built as a showcase of the processes I used to solve a similar problem in 2023, when multimodal models were not as accurate as today. For anyone looking to build a similar solution, I advise using one of today's out-of-the-box options, such as AWS Textract, rather than attempting to process the TSVs. The current stack is still convenient though, since it's free.
