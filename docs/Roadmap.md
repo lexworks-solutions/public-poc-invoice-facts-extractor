@@ -17,3 +17,8 @@ For the example invoices:
 - `invoice-example-1.pdf`: Standard invoice, exported from Xero's Demo Organisation. Has information in the 2nd page.
 - `invoice-example-2.pdf`: Standard invoice, but has a different layout from the others. All information is in the first page.
 - `invoice-example-3.pdf`: Not a standard invoice, has some styling and is multiple pages long. The file is also significantly bigger - 1.6 MB, while others are 90.1 KiB or 42.6 KiB.
+
+After executing the tests, we have found that:
+
+1. The workflow is viable and the AI is able to reliably extract information from the invoices.
+2. Using TSV is likely unnecessary with the recent development of multimodal models. Uploading the invoices directly could lead to reduced token usage and potentially more accuracy.
