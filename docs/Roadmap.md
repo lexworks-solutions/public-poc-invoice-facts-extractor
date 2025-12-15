@@ -15,8 +15,11 @@ In order to do this, we'll perform the following:
 For the example invoices:
 
 - `invoice-example-1.pdf`: Standard invoice, exported from Xero's Demo Organisation. Has information in the 2nd page.
+  - Source: [Xero](https://www.xero.com/us/)'s "Very Orange" invoice template
 - `invoice-example-2.pdf`: Standard invoice, but has a different layout from the others. All information is in the first page.
+  - Source: [Sliced Invoices](https://slicedinvoices.com)
 - `invoice-example-3.pdf`: Not a standard invoice, has some styling and is multiple pages long. The file is also significantly bigger - 1.6 MB, while others are 90.1 KiB or 42.6 KiB.
+  - Invoice source: [Adobe Express](https://new.express.adobe.com/design/template/urn:aaid:sc:VA6C2:2321d6eb-e904-57f1-874c-df910c3f9490?category=templates&referrer=https%3A%2F%2Fwww.google.com%2F&url=%2Fexpress%2Ftemplates%2Finvoice&placement=template-x&locale=en-US&contentRegion=us)
 
 After executing the tests, we have found that:
 
