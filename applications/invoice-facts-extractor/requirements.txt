@@ -1,0 +1,5 @@
+## The following requirements were added by pip freeze:
+packaging==25.0
+pdf2image==1.17.0
+pillow==11.0.0
+pytesseract==0.3.13

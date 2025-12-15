@@ -3,8 +3,8 @@
 function install() {
   sudo apt update -y
   sudo apt install -y \
-    tesseract-ocr \
-    libtesseract-dev
+    tesseract-ocr libtesseract-dev \
+    poppler-utils
 }
 
 function main() {
